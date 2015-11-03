@@ -9,6 +9,9 @@
 #import "ThirdViewController.h"
 
 @interface ThirdViewController ()
+@property (nonatomic, strong) UIButton *growingButton;
+@property (nonatomic, assign) CGSize    buttonSize;
+
 
 @end
 
@@ -17,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self setGrowingUI];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +38,13 @@
 }
 */
 
+
+-(void)setGrowingUI {
+    self.growingButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [self.growingButton setTitle:@"Grow me" forState:UIControlStateNormal];
+    self.growingButton.layer.borderColor = UIColor.greenColor.CGColor;
+    self.growingButton.layer.borderWidth = 3;
+    
+    self.buttonSize = CGSizeMake(100, <#CGFloat height#>)
+}
 @end

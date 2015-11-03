@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SecondController.h"
+#import "ThirdViewController.h"
 
 @interface ViewController ()
 
@@ -49,9 +50,11 @@
 #pragma mark - event
 
 -(void)pushUITestController {
-    SecondController *second = [[SecondController alloc]init];
-    [self.navigationController pushViewController:second animated:YES];
-    
+//    SecondController *second = [[SecondController alloc]init];
+//    [self.navigationController pushViewController:second animated:YES];
+
+    ThirdViewController *third = [[ThirdViewController alloc]init];
+    [self.navigationController pushViewController:third animated:YES];
 }
 
 @end
