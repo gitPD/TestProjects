@@ -61,7 +61,7 @@
     attributeLable.attributedText = attributedStr;
     
     [self.view addSubview:attributeLable];
-    NSLog(@"aaaaaa");
+    NSLog(@"test demo");
     
 }
 
