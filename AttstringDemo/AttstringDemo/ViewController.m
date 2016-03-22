@@ -62,7 +62,7 @@
     
     [self.view addSubview:attributeLable];
     NSLog(@"test demo 123 !!!");
-    NSLog(@"456");
+    NSLog(@"4");
     
 }
 
